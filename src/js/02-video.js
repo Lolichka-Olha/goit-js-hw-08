@@ -9,7 +9,7 @@ player.on('play', function () {
 
 const TIME_KEY = 'videoplayer-current-time';
 
-const timeStorage = JSON.parse(localStorage.getItem(TIME_KEY));
+const timeStorage = JSON.parse(localStorage.getItem(TIME_KEY)) || {};
 
 console.log(timeStorage);
 
